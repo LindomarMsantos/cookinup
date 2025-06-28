@@ -18,5 +18,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .  # Diretório raiz onde está o index.html
+          publish_dir: ./dist   #Aqui está a correção!
           force_orphan: true
