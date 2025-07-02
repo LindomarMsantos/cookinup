@@ -7,9 +7,9 @@ export default {
             ingredientes: ['Alho', 'Manteiga', 'Orégano']
         };
     },
-    components: { SelecionarIngredientesgit }
+    components: { SelecionarIngredientes}
 }
-</script>
+</script>git
 
 <template>
   <main class="conteudo-principal">
