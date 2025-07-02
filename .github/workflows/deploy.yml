@@ -1,0 +1,22 @@
+name: Deploy to GitHub Pages NOVO
+
+on:
+  workflow_dispatch:  # Manual trigger ONLY, no branches needed
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Deploy para o GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist   #Aqui está a correção!
+          force_orphan: true
