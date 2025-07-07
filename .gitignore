@@ -16,7 +16,10 @@ coverage
 
 /cypress/videos/
 /cypress/screenshots/
-# teste pullrequest
+# teste pullrequest 1
+# teste pullrequest  2
+
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
